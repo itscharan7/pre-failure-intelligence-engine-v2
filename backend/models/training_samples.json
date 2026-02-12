@@ -1,0 +1,62 @@
+[
+  {
+    "engine_id": 1,
+    "cycle": 1,
+    "anomaly_score": -0.06729678158513619,
+    "prediction": -1
+  },
+  {
+    "engine_id": 1,
+    "cycle": 2,
+    "anomaly_score": 0.05140545762059223,
+    "prediction": 1
+  },
+  {
+    "engine_id": 1,
+    "cycle": 3,
+    "anomaly_score": 0.11026948014013316,
+    "prediction": 1
+  },
+  {
+    "engine_id": 1,
+    "cycle": 4,
+    "anomaly_score": 0.05823295154005659,
+    "prediction": 1
+  },
+  {
+    "engine_id": 1,
+    "cycle": 5,
+    "anomaly_score": 0.08407547239671298,
+    "prediction": 1
+  },
+  {
+    "engine_id": 1,
+    "cycle": 6,
+    "anomaly_score": 0.06989696317708666,
+    "prediction": 1
+  },
+  {
+    "engine_id": 1,
+    "cycle": 7,
+    "anomaly_score": 0.07377591125764499,
+    "prediction": 1
+  },
+  {
+    "engine_id": 1,
+    "cycle": 8,
+    "anomaly_score": 0.10076454952289027,
+    "prediction": 1
+  },
+  {
+    "engine_id": 1,
+    "cycle": 9,
+    "anomaly_score": 0.0878844044959356,
+    "prediction": 1
+  },
+  {
+    "engine_id": 1,
+    "cycle": 10,
+    "anomaly_score": 0.08564811714809123,
+    "prediction": 1
+  }
+]

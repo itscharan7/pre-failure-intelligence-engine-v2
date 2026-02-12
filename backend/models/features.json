@@ -1,0 +1,14 @@
+[
+  "sensor_2_rolling_mean",
+  "sensor_2_rolling_std",
+  "sensor_2_diff",
+  "sensor_7_rolling_mean",
+  "sensor_7_rolling_std",
+  "sensor_7_diff",
+  "sensor_12_rolling_mean",
+  "sensor_12_rolling_std",
+  "sensor_12_diff",
+  "sensor_2",
+  "sensor_7",
+  "sensor_12"
+]
