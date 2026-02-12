@@ -1,73 +1,91 @@
-# Welcome to your Lovable project
+# 🚀 Pre-Failure Intelligence System
+## Explainable AI-Based Predictive Maintenance Dashboard
 
-## Project info
+## 📌 Project Overview
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+Pre-Failure Intelligence System is an end-to-end Explainable AI solution designed to predict machine failures before they occur using sensor data.
 
-## How can I edit this code?
+The system analyzes engine degradation patterns from the NASA C-MAPSS dataset and predicts whether a machine is:
 
-There are several ways of editing your application.
+- ✅ Healthy  
+- ⚠️ At Risk  
+- ❌ Near Failure  
 
-**Use Lovable**
+It provides explainable predictions using SHAP and displays results through an interactive Streamlit dashboard.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🎯 Problem Statement
 
-**Use your preferred IDE**
+Industries lose millions due to unexpected equipment failures. Traditional maintenance methods are:
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- Reactive (fix after failure)
+- Scheduled (may waste resources)
+- Not data-driven  
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+This project implements predictive maintenance using AI to prevent breakdowns before they happen.
 
-Follow these steps:
+---
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## 🧠 Technologies Used
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+- Python  
+- Pandas  
+- NumPy  
+- Scikit-learn  
+- Isolation Forest (Anomaly Detection)  
+- SHAP (Explainable AI)  
+- Feature Engineering (Rolling Mean, Std, Diff)  
+- Streamlit (Interactive Dashboard)  
 
-# Step 3: Install the necessary dependencies.
-npm i
+---
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+## 📊 Dataset
 
-**Edit a file directly in GitHub**
+- NASA C-MAPSS FD001 Dataset  
+- Multivariate time-series engine degradation data  
+- Simulates aircraft engine sensor readings until failure  
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+---
 
-**Use GitHub Codespaces**
+## ⚙️ System Workflow
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+### 1️⃣ Data Preprocessing
+- Removed irrelevant columns  
+- Managed engine cycles  
+- Normalized features  
 
-## What technologies are used for this project?
+### 2️⃣ Feature Engineering
+Created advanced features:
+- Rolling Mean  
+- Rolling Standard Deviation  
+- Sensor Differences  
+- Trend Indicators  
 
-This project is built with:
+### 3️⃣ Model Development
+Used Isolation Forest for anomaly detection:
+- Detects abnormal degradation behavior  
+- Assigns anomaly scores  
+- Converts scores into risk levels  
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+### 4️⃣ Explainability Layer
+Integrated SHAP to:
+- Show feature importance  
+- Explain prediction decisions  
+- Improve industrial trust  
 
-## How can I deploy this project?
+### 5️⃣ Streamlit Dashboard
+Interactive components:
+- Engine selection dropdown  
+- Animated health gauge  
+- Risk progress bar  
+- Restart button  
+- Maintenance recommendations  
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+---
 
-## Can I connect a custom domain to my Lovable project?
+## 🏗️ Project Architecture
 
-Yes, you can!
+Data → Preprocessing → Feature Engineering → Isolation Forest Model  
+→ SHAP Explainability → Streamlit Dashboard → User Insights  
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
